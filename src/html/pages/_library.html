@@ -7,7 +7,7 @@
   </div>
   <div class="mdk-box__content">
     <div class="hero {{ containerClass }} py-64pt py-md-112pt text-center text-sm-left">
-      <h1 class="text-white mb-24pt">Library</h1>
+      <h1 class="text-white mb-24pt">Lista de cursos</h1>
       
       <!-- <div class="col-lg-6 mb-24pt p-0">
         <form class="search-form search-form--light input-group-lg" action="">
@@ -16,11 +16,11 @@
         </form>
       </div> -->
 
-      <p class="lead measure-hero-lead text-white mb-24pt">Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills with our professional tutorials.</p>
+      <p class="lead measure-hero-lead text-white mb-24pt">Adquiere habilidades de negocios, tecnológicas y creativas enseñadas por expertos en la industria. Explora un gran rango de habilidades con nuestros bootcamps profesionales.</p>
 
       <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
-        <a href="{{ prefix or '' }}pricing.html" class="btn btn-lg btn--raised btn-white mb-16pt mb-sm-0 mr-sm-16pt">Start a trial</a>
-        <a href="{{ prefix or '' }}library-filters.html" class="btn btn-lg btn-outline-white">Explore Library</a>
+        <a href="{{ prefix or '' }}pricing.html" class="btn btn-lg btn--raised btn-white mb-16pt mb-sm-0 mr-sm-16pt">Empieza aqui!</a>
+        <!-- <a href="{{ prefix or '' }}library-filters.html" class="btn btn-lg btn-outline-white">Explore Library</a> -->
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
 <div class="navbar navbar-expand-sm {{ navbar_submenu_class }} h-auto h-sm-64 p-sm-0">
   <div class="container flex-column flex-sm-row">
 
-    <h4 class="mb-0 d-none d-sm-block mr-sm-24pt flex">Featured</h4>
+    <!-- <h4 class="mb-0 d-none d-sm-block mr-sm-24pt flex">Featured</h4>
     <div class="d-flex flex-wrap">
       <a href="{{ prefix or '' }}path.html" class="m-8pt">
         <img src="assets/images/paths/angular_40x40@2x.png" width="40" height="40" alt="Angular" class="rounded">
@@ -49,23 +49,23 @@
       <a href="{{ prefix or '' }}path.html" class="m-8pt">
         <img src="assets/images/paths/wordpress_40x40@2x.png" width="40" height="40" alt="WordPress" class="rounded">
       </a>
-    </div>
+    </div> -->
   </div>
 </div>
 
 <div class="page-section">
   <div class="{{ containerClass or 'container' }}">
     <div class="page-headline text-center">
-      <h2>Development</h2>
-      <p class="lead text-70 measure-lead mx-auto">Get the Technology and Creative Skills you need to launch a career by learning from industry experts.</p>
+      <h2>Desarrollo</h2>
+      <p class="lead text-70 measure-lead mx-auto">Adquiere habilidades tecnológicas y creativas que necesitas para lanzar tu carrera aprendiendo de expertos en la industria.</p>
     </div>
 
     <div class="page-heading">
-      <h4>Top Development Courses</h4>
-      <a href="#" class="ml-sm-auto text-underline">See Development Courses</a>
+      <h4>Cursos de desarrollo</h4>
+      <!-- <a href="#" class="ml-sm-auto text-underline">See Development Courses</a> -->
     </div>
     <div class="row">
-      <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">
+      <!-- <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">
         {{ course.component(title='Learn Angular fundamentals', image='angular', free=true) }}
       </div>
       <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">
@@ -89,14 +89,79 @@
       <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">
         {{ course.component(title='Angular Routing In-Depth', image='angular_routing', position='left', avatar='angular') }}
       </div>
-    </div>
+    </div> -->
+    <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">
+        {{ course.component(title='Bootcamp Data Science', image='data_science', favorite=true, file_link='python-course.html', teacher='Christian Picon',
+          hours='160 horas', schedule='Lunes a Viernes', schedule_hours='Horario: 8 a 12 - 6 a 9',
+          small_description='Conviertete en un científico de datos y manipula la información de forma inteligente y automática.',
+          checkedList={
+              firstItem: 'Administrar proyectos colaborativos en repositorios OpenSource como Github.', 
+              secondItem: 'Identificar y manipular Python como herramienta para el análisis de datos.',
+              thirdItem: 'Utilizar la consola/terminal para actualizar las librerias y crear máquinas de virtuales de Python.',
+              fourthItem: 'Aplicar técnicas de estructuración y operación de datos como vectores y/o matrices.',
+              fifthItem: 'Presentar pruebas laborales en desarrollo de análisis de datos.'
+            }
+          ) }}
+      </div>
+      <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">        
+          {{ course.component(title='Bootcamp FullStack', image='fullStack', favorite=true, file_link='fullstack-course.html', teacher='Christian Picon',
+            hours='160 horas', schedule='Lunes a Viernes', schedule_hours='Horario: 6 a 9',
+            small_description='Conviértete en un programador web Full Stack, dominando el desarrollo Frontend y Backend, cumple tus sueños y consigue el trabajo que siempre quisiste.',
+            checkedList={
+                firstItem: 'Desarrollar aplicaciones Backend con NodeJS, JavaScript, ExpressJS.', 
+                secondItem: 'Crear Páginas y sitios web (Frontend) utilizando HTML5 CSS3 JavaScript,',
+                thirdItem: 'Crear aplicaciones web completas con MEAN Stack. (Mongo-Express-Angular 8-Node).',
+                fourthItem: 'Emprender en su proyecto o idea de negocio.',
+                fifthItem: 'Aplicar la metodología ágil SCRUM en sus proyectos de software.'
+              }
+            ) }}
+      </div>
+      <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">
+          {{ course.component(title='Bootcamp Frontend', image='frontend', favorite=true, file_link='frontend-course.html', teacher='Christian Picon',
+            hours='160 horas', schedule='Martes, Miercoles y Jueves', schedule_hours='Horario: 6 a 9',
+            small_description='Conviértete en un programador web Full Stack, dominando el desarrollo Frontend y Backend, cumple tus sueños y consigue el trabajo que siempre quisiste.',
+            checkedList={
+                firstItem: 'Enseñar los fundamentos de programación a personas con o sin conocimientos en programación, mejorar su lógica por medio de algoritmia, para poder enfrentarse a cualquier lenguaje de programación más avanzado.', 
+                secondItem: 'Enseñar a crear páginas y sitios web informáticos por medio de HTML5+CSS3+JAVASCRIPT, para que puedan emprender en sus proyectos y/o trabajar como programador web o webmaster',
+                thirdItem: 'Mejorar el trabajar en equipo.',
+                fourthItem: 'Optimizar proyectos por medio de metodologías ágiles como SCRUM.',
+                fifthItem: 'Emprender en su proyecto o idea de negocio.'
+              }
+            ) }}
+      </div>
+      <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">
+          {{ course.component(title='JavaScript', image='javascript', favorite=true, file_link='javascript-course.html', teacher='Christian Picon',
+            hours='160 horas', schedule='Sábados', schedule_hours='Horario: 8 a 12 AM',
+            small_description='Aprende el lenguaje de programación más popular del mundo JavaScript, con el cual le darás vida a tus páginas y/o sitios web.',
+            checkedList={
+                firstItem: '­Aplicar Javascript en sitios web.', 
+                secondItem: 'Crear cualquier tipo de página web dinámica',
+                thirdItem: 'Aplicar buenas prácticas y estándares en sus desarrollos de software.',
+                fourthItem: 'Afrontar cualquier prueba o reto relacionado a Javascript.',
+                fifthItem: 'Aprender cualquier framework o herramienta de la familia Javascript.'
+              }
+            ) }}
+      </div>
+      <div class="{{ gridClass or 'col-lg-4 col-xl-3 col-md-6' }}">
+          {{ course.component(title='Wordpress', image='wordpress', favorite=true, file_link='wordpress-course.html', teacher='Christian Picon',
+            hours='160 horas', schedule='Martes, Miercoles y Jueves', schedule_hours='Horario: 6 a 9',
+            small_description='Este curso para emprendedores y creativos tiene como objetivo entregar todas las herramientas necesarias para que el alumno domine WordPress y pueda crear y administrar su propio sitio web con el manejador de contenidos más usado del mundo.',
+            checkedList={
+                firstItem: '­­­Crear sitios web con WordPress.', 
+                secondItem: 'Administrar sitios web con WordPress.',
+                thirdItem: 'Publicar sitios en internet creados con WordPress.',
+                fourthItem: 'Entender que es un Hosting y Dominio.',
+                fifthItem: 'Emprender en su proyecto o idea de negocio.'
+              }
+            ) }}
+      </div>
   </div>
 
-  <div class="page-separator mt-lg-16pt">
+  <!-- <div class="page-separator mt-lg-16pt">
     <a href="" class="page-separator__text">show more <span class="material-icons">keyboard_arrow_down</span></a>
-  </div>
+  </div> -->
 </div>
-
+<!-- 
 <div class="page-section pt-0">
   <div class="{{ containerClass or 'container' }}">
     <div class="page-headline text-center">
@@ -139,4 +204,4 @@
   <div class="page-separator mt-lg-16pt">
     <a href="" class="page-separator__text">show more <span class="material-icons">keyboard_arrow_down</span></a>
   </div>
-</div>
+</div> -->

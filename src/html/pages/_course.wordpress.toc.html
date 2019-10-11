@@ -1,0 +1,174 @@
+{% macro component(tocListClass='', prefix) %}
+<ul class="accordion accordion--boxed js-accordion {{ tocListClass or '' }}" id="course-toc">  
+  <li class="accordion__item open">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-2">
+      <span class="flex">Aspectos Generales</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse show" id="course-toc-2">        
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">¿Que es wordpres?</a>
+          <span class="text-muted">50m 13s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Diferencias entre wordpress.com y wordpress.org.</a>
+          <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Tipos de sitios que se pueden desarrollar con wordpress.</a>
+          <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Ejemplos de sitios desarrollados con el CMS.</a>
+          <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Qué es Hosting y Dominio.</a>
+            <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Instalación en el CPanel.</a>
+            <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Creación y conexión con la base de datos.</a>
+            <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Configuración de wordpress.</a>
+            <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Enlaces permanentes.</a>
+            <span class="text-muted">12m 10s</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion__item">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-3">
+      <span class="flex">Contenido y personalización</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse" id="course-toc-3">
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Logotipo, Favicon y colores.</a>
+          <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Qué son las entradas (Categorías, Etiquetas, Programación de publicidad).</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Cómo subir archivos a la web (Imágenes, documentos, videos).</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Creando las páginas del sitio.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Hipervinculos.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Plantillas (Instalación, configuración y personalización).</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Widgets (tipos de widgets y su ubicación).</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Menús (Creación y asignación).</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Usuarios - Administración y asignación de roles.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Creación de la home page.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion__item">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-4">
+      <span class="flex">Agregando funciones a la web</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse" id="course-toc-4">
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Plugins de redes sociales (compartir y seguir).</a>
+          <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Yoast SEO - configuración básica.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Visual composer.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Formulario de contacto.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Sliders.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Chat.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Google Analytics (conexión y configuración).</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Google Maps.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+            <a class="flex" href="{{ prefix or '' }}lesson.html">Tipografías Google fonts.</a>
+            <span class="text-muted">04:23</span>
+        </li>
+      </ul>
+    </div>
+  </li>  
+</ul>
+{% endmacro %}

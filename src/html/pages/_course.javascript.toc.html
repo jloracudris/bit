@@ -1,0 +1,84 @@
+{% macro component(tocListClass='', prefix) %}
+<ul class="accordion accordion--boxed js-accordion {{ tocListClass or '' }}" id="course-toc">
+  <li class="accordion__item open">
+    <a class="accordion__toggle" data-parent="#course-toc" href="#course-toc-1">
+      <span class="flex">Contenido</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_up</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse show" id="course-toc-1">
+        <li class="accordion__menu-link active">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Visual Studio Code (Instalación)</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Diferencia entre página web y sitios web</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Kahoot - Classroom</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Estructura HTML</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Archivos .html .css y .js</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Etiquetas para textos, imágenes, vídeos, listas, tablas.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Lenguaje de programación Javascript.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Diferencias frontend vs backend.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Aplicar estilos CSS a etiquetas HTML.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Aplicar estilos CSS a etiquetas HTML.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Estilos para textos, fondos de página, colores y efectos visuales.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Creación y manejo de repositorios de proyectos en GitHub.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Dominio, Hosting y servidor.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Construcción de proyecto Final (un sitio web completo informativo) .</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+      </ul>
+    </div>
+  </li>  
+</ul>
+{% endmacro %}

@@ -54,10 +54,9 @@ class TextScramble {
 
 const textScrambleComponent = () => {
   let phrases = [
-    'Development',
-    'Design',
-    'Business',
-    'Photography'
+    'Machine Learning',
+    'Video Juegos',
+    'Desarrollo Web'
   ]
   let timer
   let interval = 2000

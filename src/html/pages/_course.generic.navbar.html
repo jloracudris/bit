@@ -1,0 +1,54 @@
+{% macro component(schedule, schedule2, schedule3, date1, date2, investment) %}
+<div class="navbar navbar-expand-sm navbar-submenu navbar-light navbar-list p-0 m-0 align-items-center">
+  <div class="{{ containerClass or 'container' }}">
+    <ul class="nav navbar-nav flex align-items-sm-center">
+      <!-- <li class="nav-item navbar-list__item">
+        <div class="media align-items-center">
+          <span class="media-left mr-16pt">
+            <img src="assets/images/people/50/guy-6.jpg" width="40" alt="avatar" class="rounded-circle">
+          </span>
+          <div class="media-body">
+            <a class="card-title m-0" href="{{ prefix or '' }}instructor-profile.html">Eddie Bryan</a>
+            <p class="text-50 lh-1 mb-0">Instructor</p>
+          </div>
+        </div>
+      </li> -->
+      {% if schedule %}
+      <li class="nav-item ml-sm-auto text-sm-center navbar-list__item">
+        <i class="material-icons text-muted icon--left">schedule</i>
+        <span class="pr-1">Diurno:</span> <strong> {{schedule}}</strong>
+      </li> 
+      {% endif %}   
+      {% if schedule2 %}
+      <li class="nav-item navbar-list__item">
+        <i class="material-icons text-muted icon--left">schedule</i>
+        <span class="pr-1">Nocturno:</span> <strong> {{schedule2}}</strong>
+      </li>
+      {% endif %} 
+      {% if schedule3 %}
+      <li class="nav-item navbar-list__item">
+        <i class="material-icons text-muted icon--left">schedule</i>
+        <span class="pr-1">Nocturno:</span> <strong> {{schedule3}}</strong>
+      </li>
+      {% endif %} 
+      <li class="nav-item navbar-list__item">
+        <i class="material-icons text-muted icon--left">calendar_today</i>
+        <strong>{{date1}}</strong>
+      </li>
+      {% if date2 %}
+      <li class="nav-item navbar-list__item">
+        <i class="material-icons text-muted icon--left">calendar_today</i>
+        <strong>{{date2}}</strong>
+      </li>
+      {% endif %}
+      {% if investment %}
+      <li class="nav-item navbar-list__item">
+        <i class="material-icons text-muted icon--left">attach_money</i>
+        <strong>{{investment}}</strong>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
+{% endmacro %}
+{{ component() }}

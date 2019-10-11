@@ -1,0 +1,127 @@
+<!-- <div class="mdk-box bg-dark mdk-box--bg-gradient-primary js-mdk-box mb-0" data-effects="blend-background">
+  <div class="mdk-box__content">
+    <div class="hero py-64pt text-center text-sm-left">
+      <div class="container">
+        <h1 class="text-white">Bootcamp Data Science</h1>
+        <p><h1 class="text-white">Fundamentos de Python y Machine Learning</h1></p>
+        <p class="lead text-white-50 text-justify">Actualízate, aprende y mantente al día en las nuevas tendencias del mundo de la tecnología y la inteligencia artificial.</p>
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
+          <a href="{{ prefix or '' }}lesson.html" class="btn btn-outline-white mb-16pt mb-sm-0 mr-sm-16pt">Ver trailer <i class="material-icons icon--right">play_circle_outline</i></a>
+          <a href="{{ prefix or '' }}pricing.html" class="btn btn-white">Inscríbete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="mdk-box bg-dark js-mdk-box position-relative overflow-hidden mb-0" 
+  data-effects="parallax-background blend-background">
+  <div class="mdk-box__bg">
+    <div class="mdk-box__bg-front" style="background-image: url(assets/images/courses/1_668x290.jpeg);"></div>
+  </div>
+  <div class="mdk-box__content">
+    <div class="{{ containerClass }} py-64pt py-md-112pt">
+      <div class="row align-items-center text-center text-md-left">
+        <div class="col-md-6 col-lg-5 order-1 order-md-0" style="background: rgba(88, 91, 104, 0.5);
+        opacity: 1;
+        border-radius: 5px;">
+          <h1 class="text-white">Javascript</h1>          
+          <p class="lead mb-16pt text-white">Aprende a diseñar páginas y sitios web básicos informativos con las herramientas HTML5 y CSS3, creando el código tú mismo y dándole forma a lo que quieres desarrollar y a lo que quieres que el usuario vea en la web.</p>
+          <p class="mb-0"><span class="text-white text-underline"><strong>Por qué BIT es diferente?</strong></span></p>
+          <ul class="list-unstyled mb-16pt mb-lg-48pt">
+              <li class="d-flex align-items-center text-white pb-2">
+                  <span class="material-icons mr-0">people</span>
+                  <span class="text-white pl-1">Bolsa de empleo.</span>
+              </li>
+              <li class="d-flex align-items-center text-white pb-2">
+                  <span class="material-icons mr-0">check</span>
+                  <span class="text-white pl-1">Asesoría personalizada para guiarte en la mejor opción.</span>
+              </li>
+              <li class="d-flex align-items-center text-white pb-2">
+                  <span class="material-icons mr-0">assessment</span>
+                  <span class="text-white pl-1">Certtificado avalado por una institución de educación superior.</span>
+              </li>
+              <li class="d-flex align-items-center text-white">
+                  <span class="material-icons mr-0">money</span>
+                  <span class="text-white pl-1">Financiacion a largo plazo.</span>
+              </li>
+          </ul>
+          <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
+              <!-- <a href="{{ prefix or '' }}lesson.html" class="btn btn-outline-white mb-16pt mb-sm-0 mr-sm-16pt">Ver trailer <i class="material-icons icon--right">play_circle_outline</i></a>
+              <a href="{{ prefix or '' }}pricing.html" class="btn btn-white">Inscríbete</a> -->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- <div class="hero container text-center py-112pt">
+      <h1 class="text-white">Learn to Code</h1>
+      <p class="lead measure-hero-lead mx-auto mb-48pt text-white">Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills with our professional tutorials.</p>
+      <a href="{{ prefix or '' }}library.html" class="btn btn-lg btn-outline-white">Browse Courses</a>
+    </div> -->
+  </div>
+</div>
+
+{% import 'pages/_course.generic.navbar.html' as genericNavbar %}
+{{genericNavbar.component(date1='Presencial - 2 Nov - 30 Nov 2019', date2='Duración - 5 Sábados')}}
+
+<!-- {% include 'pages/_course.navbar.html' %} -->
+
+{% import '_card-pricing.html' as pricing %}
+<div class="page-section border-bottom-2">
+    <div class="{{ containerClass or 'container' }}">
+      <div class="page-headline text-center">
+          <h2>Precios</h2>        
+      </div>
+      <div class="row card-group-row mb-16pt mb-lg-40pt">
+        <div class="col-lg-4 col-sm-6 card-group-row__col">
+          {{ pricing.component(
+            title="Sábados", 
+            description="8AM a 12PM",
+            price="950.000 + IVA",
+            color="accent",
+            raised=true,            
+            icon="group"
+            ) }}
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="{{ alt_bg }}">
+  {% import 'pages/_course.generic.description.html' as genericDesc %}
+  {{genericDesc.component(list=[
+    {item: '­Aplicar Javascript en sitios web.'},
+    {item: 'Crear cualquier tipo de página web dinámica'},
+    {item: 'Aplicar buenas prácticas y estándares en sus desarrollos de software.'},
+    {item: 'Afrontar cualquier prueba o reto relacionado a Javascript.'},
+    {item: 'Aprender cualquier framework o herramienta de la familia Javascript.'}    
+    ],desc='Aprende a diseñar páginas y sitios web básicos informativos con las herramientas HTML5 y CSS3, creando el código tú mismo y dándole forma a lo que quieres desarrollar y a lo que quieres que el usuario vea en la web. Aprende el lenguaje de programación más popular del mundo JavaScript, con el cual le darás vida a tus páginas y/o sitios web. Mejora tu lógica de programación, por medio de algoritmia desarrollando aplicaciones que perfeccionan tu manera de resolver problemas para poder enfrentarte al aprendizaje de cualquier lenguaje de programación..')}}
+</div>
+
+<div class="page-section border-bottom-2">
+    {% import 'pages/_course.generic.detailed.info.html' as genericDetailedInfo %}
+    {{genericDetailedInfo.component(certifcationText='Bit - Bogotá Institude of Technology otorga a los estudiantes que logren los objetivos académicos y cumplan todos los entregables durante el curo certificado de asistencia en: Javascript, Avalado por la institución de educación superior Corporación Universitaria Iberoamericana.')}}
+</div>
+
+<div class="page-section {{ alt_bg }} border-bottom-2">
+  {% include 'pages/_course.author.html' %}
+</div>
+
+<div class="page-section border-bottom-2">
+  {% include 'pages/_course.feedback.html' %}
+</div><!-- 
+
+<div class="{{ alt_bg }}">
+  {% include 'pages/_course.rating.html' %}
+</div>
+
+<div class="page-section">
+  <div class="{{ containerClass or 'container' }}">
+    <div class="page-heading">
+      <h4>Top Development Courses</h4>
+      <a href="{{ prefix }}library-development.html" class="ml-sm-auto text-underline">See Development Courses</a>
+    </div>
+    {% include '_courses.carousel.html' %}
+  </div>
+</div> -->

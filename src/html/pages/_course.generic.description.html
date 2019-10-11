@@ -1,0 +1,49 @@
+{% macro component( title='Acerca de este curso', desc, list) %}
+
+<div class="page-section pb-0 js-read-more">
+  <div class="{{ containerClass or 'container' }}">
+    <div class="row">
+      <div class="col-md-7">
+        <h4>{{ title }}</h4>        
+        <p class="text-70 text-justify">{{ desc | safe }}</p>
+      </div>
+      <div class="col-md-5">
+        <h4>Lo que Aprenderas</h4>
+        {% if list %}        
+        <ul class="list-unstyled">
+          {% for element in list %}          
+          <li class="d-flex align-items-center pb-2">            
+            <span class="material-icons text-50 mr-8pt">check</span>
+            <span class="text-70">{{element.item}}</span>
+          </li> 
+          {% endfor %}         
+        </ul>
+        {% else %}
+        <ul class="list-unstyled">
+          <li class="d-flex align-items-center pb-2">
+            <span class="material-icons text-50 mr-8pt">check</span>
+            <span class="text-70">Administrar proyectos colaborativos en repositorios OpenSource como Github.</span>
+          </li>
+          <li class="d-flex align-items-center pb-2">
+            <span class="material-icons text-50 mr-8pt">check</span>
+            <span class="text-70">Identificar y manipular Python como herramienta para el análisis de datos.</span>
+          </li>
+          <li class="d-flex align-items-center pb-2">
+            <span class="material-icons text-50 mr-8pt">check</span>
+            <span class="text-70">Utilizar la consola/terminal para actualizar las librerias y crear máquinas de virtuales de Python.</span>
+          </li>                  
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>  
+  <!-- <div class="page-separator-mask__content">
+    <div class="page-separator-mask__top"></div>
+    <div class="page-separator-mask__bottom"></div>
+    <div class="page-separator">
+      <a href="#" class="page-separator__text link-text">Leer mas <i class="material-icons">keyboard_arrow_down</i></a>
+    </div>
+  </div> -->
+</div>
+{% endmacro %}
+{{ component() }}

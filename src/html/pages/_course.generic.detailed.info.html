@@ -1,0 +1,14 @@
+{% macro component( certifcationText, contenido) %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mb-24pt mb-md-0">
+      {% if contenido %}
+      <h4>Contenido</h4>
+      <p class="text-70 mb-24pt">{{contenido}} </p>
+      {% endif %}
+      <h4>Certificación</h4>
+      <p class="text-70 mb-24pt">{{certifcationText}}</p>
+    </div>
+  </div>
+</div>
+{% endmacro %}

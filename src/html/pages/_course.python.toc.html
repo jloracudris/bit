@@ -1,0 +1,111 @@
+{% macro component(tocListClass='', prefix) %}
+<ul class="accordion accordion--boxed js-accordion {{ tocListClass or '' }}" id="course-toc">
+  <li class="accordion__item open">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-1">
+      <span class="flex" data-toggle="tooltip" title="Aprenderás los comandos fundamentales para el uso de 
+      repositorios globales en Git. Crearas tu propio repositorio, harás commits que te permitirás desarrollar grandes proyectos. 
+      Aprenderás a participar e ingrear a comunidades de proyectos a escala global." data-placement="left">Fundamentos GitHub</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse show" id="course-toc-1">
+        <li class="accordion__menu-link active">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="{{ prefix or '' }}lesson-python.html">Ver Trailer</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion__item open">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-2">
+      <span class="flex">Pycharm, Atom y Sublime text consola, Terminal y Bash</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse show" id="course-toc-2">        
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Introducción a Pycharm</a>
+          <span class="text-muted">50m 13s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Introducción a Atom</a>
+          <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Introducción a Sublime text consola</a>
+          <span class="text-muted">12m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Introducción a Bash</a>
+          <span class="text-muted">12m 10s</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion__item">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-3">
+      <span class="flex">Introducción a Python</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse" id="course-toc-3">
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Introducción a Python</a>
+          <span class="text-muted">04:23</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion__item">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-4">
+      <span class="flex">Toolbox</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse" id="course-toc-4">
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Toolbox</a>
+          <span class="text-muted">04:23</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion__item">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-4">
+      <span class="flex">Inglés</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse" id="course-toc-4">
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Introducción a Inglés</a>
+          <span class="text-muted">04:23</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="accordion__item">
+    <a class="accordion__toggle" data-toggle="collapse" data-parent="#course-toc" href="#course-toc-4">
+      <span class="flex">Desarrollo Profesional</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse" id="course-toc-4">
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-muted">lock</span>
+          <a class="flex" href="{{ prefix or '' }}lesson.html">Introducción a desarrollo profesional</a>
+          <span class="text-muted">04:23</span>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+{% endmacro %}

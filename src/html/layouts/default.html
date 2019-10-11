@@ -15,7 +15,7 @@
 </head>
 <body class="layout-navbar-mini-fixed-bottom">
 
-  {% set brand = 'Tutorio' %}
+  {% set brand = 'BIT' %}
   {% set prefix = '' %}
   {% set containerClass = 'container page__container' %}
   {% set navbarContainerClass = navbarContainerClass or 'container-fluid' %}
@@ -26,12 +26,16 @@
   {% set alt_bg = 'bg-white' %}
   {% set navbar_class = 'navbar-light' %}
   {% set navbar_submenu_class = 'navbar-submenu navbar-light' %}
-  {% set search_form = 'search-form--light' %}
-  {% set footer_logo = 'assets/images/logo/black-70@2x.png' %}
+  {% set search_form = 'search-form--light' %}  
+  {% set footer_logo = 'assets/images/logo/BIT Horizontal Black.png' %}
   {% set theme_blue_light = 'http://tutorio-bootstrap.frontendmatter.com' %}
   {% set theme_blue_dark = 'http://tutorio-dark.frontendmatter.com' %}
   {% set theme_teal_light = 'http://tutorio-teal.frontendmatter.com' %}
   {% set theme_teal_dark = 'http://tutorio-teal-dark.frontendmatter.com' %}
+  {% set facebook_link = 'https://www.facebook.com/BogotaInstituteOfTechnology/' %}  
+  {% set twitter_link = 'https://twitter.com/bit_institute' %}  
+  {% set instagram_link = 'https://www.instagram.com/bit_institute/' %}  
+  {% set linkedin_link = 'https://www.linkedin.com/company/10865124/' %}  
 
   {% set role = '' %}
   {% if 'student' in slug %}
@@ -120,7 +124,6 @@
   </div>
   <!-- // END Header Layout -->
 
-  {% include 'layouts/_navbar-demo.html' %}
   {% include 'layouts/_website-drawer.html' %}
   {% include 'layouts/_app-settings.html' %}
   {% include 'layouts/_footer.html' %}

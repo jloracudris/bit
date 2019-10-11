@@ -1,0 +1,104 @@
+{% macro component(tocListClass='', prefix) %}
+<ul class="accordion accordion--boxed js-accordion {{ tocListClass or '' }}" id="course-toc">
+  <li class="accordion__item open">
+    <a class="accordion__toggle" data-parent="#course-toc" href="#course-toc-1">
+      <span class="flex">Contenido</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_up</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse show" id="course-toc-1">
+        <li class="accordion__menu-link active">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">HTML5 etiquetas básicas.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">CSS3 estilos básicos.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Multimedia (videos, audios).</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Hipervínculos.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Efectos CSS básicos.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Menú desplegable.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Repositorios Git y GitHub.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Lógica de Programación.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Documentación en proyectos de software.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Buenas prácticas.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Estándares de programación.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Algoritmos.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">JavaScript Básico.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Jquery.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+            <a class="flex" href="#">Bootstrap Básico.</a>
+            <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+            <a class="flex" href="#">Materialize Básico.</a>
+            <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+            <a class="flex" href="#">Scrum.</a>
+            <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+            <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+            <a class="flex" href="#">Proyecto final (Simulación empresa - cliente).</a>
+            <span class="text-muted">1m 10s</span>
+        </li>
+      </ul>
+    </div>
+  </li>  
+</ul>
+{% endmacro %}

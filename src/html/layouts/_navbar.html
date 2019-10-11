@@ -7,8 +7,8 @@
 
   <!-- Navbar Brand -->
   <a href="index.html" class="navbar-brand">
-    <img class="navbar-brand-icon mr-0 mr-md-8pt" src="assets/images/logo/white-100@2x.png" width="30" alt="{{ brand }}">
-    <span class="d-none d-md-block">{{ brand }}</span>
+    <img class="navbar-brand-icon mr-0 mr-md-8pt" src="assets/images/logo/BIT Blanco Horizontal.png" width="190" alt="{{ brand }}">
+    <!-- <span class="d-none d-md-block">{{ brand }}</span> -->
   </a>
 
   <button class="btn btn-black mr-16pt" data-toggle="modal" data-target="#courses">Courses <i class="material-icons">arrow_drop_down</i></button>
@@ -21,12 +21,12 @@
   <!-- Main Navigation -->
   {% if not 'instructor' in slug and not 'student' in slug %}
     <ul class="nav navbar-nav ml-auto flex-nowrap" style="white-space: nowrap;">
-      <li class="ml-16pt nav-item{% if (slug === 'login') %} active{% endif %}">
+      <!-- <li class="ml-16pt nav-item{% if (slug === 'login') %} active{% endif %}">
         <a href="login.html" class="nav-link">
           <i class="material-icons">lock_open</i>
           <span class="sr-only">Login</span>
         </a>
-      </li>
+      </li> -->
       <li class="d-none d-sm-flex nav-item{% if (slug === 'signup') %} active{% endif %}">
         <a href="pricing.html" class="btn btn-accent">Get started</a>
       </li>

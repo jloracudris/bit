@@ -1,0 +1,137 @@
+<!-- <div class="mdk-box bg-dark mdk-box--bg-gradient-primary js-mdk-box mb-0" data-effects="blend-background">
+  <div class="mdk-box__content">
+    <div class="hero py-64pt text-center text-sm-left">
+      <div class="container">
+        <h1 class="text-white">Bootcamp Data Science</h1>
+        <p><h1 class="text-white">Fundamentos de Python y Machine Learning</h1></p>
+        <p class="lead text-white-50 text-justify">Actualízate, aprende y mantente al día en las nuevas tendencias del mundo de la tecnología y la inteligencia artificial.</p>
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
+          <a href="{{ prefix or '' }}lesson.html" class="btn btn-outline-white mb-16pt mb-sm-0 mr-sm-16pt">Ver trailer <i class="material-icons icon--right">play_circle_outline</i></a>
+          <a href="{{ prefix or '' }}pricing.html" class="btn btn-white">Inscríbete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="mdk-box bg-dark js-mdk-box position-relative overflow-hidden mb-0" 
+  data-effects="parallax-background blend-background">
+  <div class="mdk-box__bg">
+    <div class="mdk-box__bg-front" style="background-image: url(assets/images/1280_15ntkpxqt54y-sai-kiran-anagani.jpg);"></div>
+  </div>
+  <div class="mdk-box__content">
+    <div class="{{ containerClass }} py-64pt py-md-112pt">
+      <div class="row align-items-center text-center text-md-left">
+        <div class="col-md-6 col-lg-5 order-1 order-md-0 p-4" style="background: rgba(150, 162, 98, 0.6);
+        opacity: 1;
+        border-radius: 5px;">
+          <h1 class="text-white">Bootcamp Fundamentos de Programación y Frontend</h1>          
+          <p class="lead mb-16pt text-white">Con este Bootcamp darás el primer paso para convertirte en Programador Web. Todo lo que necesitas para entrar en este mundo y poder crear sitios web desde cero.</p>
+          <p class="mb-0"><span class="text-white text-underline"><strong>Por qué BIT es diferente?</strong></span></p>
+          <ul class="list-unstyled mb-16pt mb-lg-48pt">
+              <li class="d-flex align-items-center text-white pt-2 pb-2">
+                <span class="material-icons mr-0">record_voice_over</span>
+                <span class="text-white pl-1">Ingles.</span>
+              </li>
+              <li class="d-flex align-items-center text-white pb-2">
+                <span class="material-icons mr-0">trending_up</span>
+                <span class="text-white pl-1">Desarrollo profesional.</span>
+              </li>                      
+              <li class="d-flex align-items-center text-white pb-2">
+                  <span class="material-icons mr-0">people</span>
+                  <span class="text-white pl-1">Bolsa de empleo.</span>
+              </li>
+              <li class="d-flex align-items-center text-white pb-2">
+                  <span class="material-icons mr-0">check</span>
+                  <span class="text-white pl-1">Asesoría personalizada para guiarte en la mejor opción.</span>
+              </li>
+              <li class="d-flex align-items-center text-white pb-2">
+                  <span class="material-icons mr-0">assessment</span>
+                  <span class="text-white pl-1">Certtificado avalado por una institución de educación superior.</span>
+              </li>
+              <li class="d-flex align-items-center text-white">
+                  <span class="material-icons mr-0">money</span>
+                  <span class="text-white pl-1">Financiacion a largo plazo.</span>
+              </li>
+          </ul>
+          <div class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
+              <!-- <a href="{{ prefix or '' }}lesson-python.html" class="btn btn-outline-white mb-16pt mb-sm-0 mr-sm-16pt">¿Qué es Data Science? <i class="material-icons icon--right">play_circle_outline</i></a> -->
+              <!-- <a href="{{ prefix or '' }}pricing.html" class="btn btn-white">Inscríbete</a> -->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- <div class="hero container text-center py-112pt">
+      <h1 class="text-white">Learn to Code</h1>
+      <p class="lead measure-hero-lead mx-auto mb-48pt text-white">Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills with our professional tutorials.</p>
+      <a href="{{ prefix or '' }}library.html" class="btn btn-lg btn-outline-white">Browse Courses</a>
+    </div> -->
+  </div>
+</div>
+
+{% import 'pages/_course.generic.navbar.html' as genericNavbar %}
+{{genericNavbar.component(date1='Presencial - 21 Oct - 13 Dic 2019', date2='Presencial - 14 Oct - 06 Dic 2019')}}
+
+<!-- {% include 'pages/_course.navbar.html' %} -->
+
+{% import '_card-pricing.html' as pricing %}
+<div class="page-section border-bottom-2">
+    <div class="{{ containerClass or 'container' }}">
+      <div class="page-headline text-center">
+          <h2>Precios</h2>        
+      </div>
+      <div class="row card-group-row mb-16pt mb-lg-40pt">
+        <div class="col-lg-4 col-sm-6 card-group-row__col">
+          {{ pricing.component(
+            title="Lunes a Viernes", 
+            description="2PM a 5.30PM",
+            price="2.800.000",
+            color="accent",
+            raised=true,            
+            icon="group"
+            ) }}
+        </div>
+        <div class="col-lg-4 col-sm-6 card-group-row__col">
+          {{ pricing.component(
+            title="Martes, Miercoles y Jueves", 
+            description="6PM a 9PM",
+            price="2.800.000",
+            color="secondary",
+            actionColor="outline-secondary",
+            icon="group"
+            ) }}
+        </div>        
+      </div>
+    </div>
+</div>
+
+<div class="{{ alt_bg }}">
+  {% import 'pages/_course.generic.description.html' as genericDesc %}
+  {{genericDesc.component(list=[
+    {item: '­Enseñar fundamentos de programación a personas con o sin conocimientos en programación, mejorar su lógica por medio de la algortimia, para poder enfrentarse a cualquier lenguaje de programación mas avanzado.'},
+    {item: 'Enseñar a crear páginas y sitios web informáticos por medio de HTML5+CSS3+Javascript, para que puedan emprender en sus proyectos y/o trabajar como programador web o web master.'},
+    {item: 'Mejorar el trabajo en equipo.'},
+    {item: 'Optimizar proyectos por medio de metodologías ágiles como Scrum.'}    
+    ],desc='Con este Bootcamp darás el primer paso para convertirte en Programador Web.
+    Todo lo que necesitas para entrar en este mundo y poder crear sitios web desde cero
+    y tener todas las bases para aprender a programar en cualquier lenguaje. Ideal para
+    todos aquellos inquietos por la tecnología pero que hoy apenas están terminando
+    sus estudio de bachillerato o han iniciado carreras en otros sectores. No esperes más
+    para potenciar tus conocimientos de la mano de la tecnología.')}}  
+</div>
+
+<div class="page-section border-bottom-2">
+    {% import 'pages/_course.generic.detailed.info.html' as genericDetailedInfo %}
+    {{genericDetailedInfo.component(certifcationText='Bit - Bogotá Institude of Technology otorga a los estudiantes
+    que logren los objetivos académicos y cumplan todos los entregables durante el curo certificado de asistencia en: Fundamentos de programación y frontend, Avalado por la institución de educación superior Corporación Universitaria Iberoamericana.', 
+    contenido='Pre-Work: Contenido virtual de introducción')}}
+</div>
+
+<div class="page-section {{ alt_bg }} border-bottom-2">
+  {% include 'pages/_course.frontend-author.html' %}
+</div>
+
+<div class="page-section border-bottom-2">
+  {% include 'pages/_course.feedback.html' %}
+</div>

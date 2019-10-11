@@ -1,0 +1,44 @@
+{% macro component(tocListClass='', prefix) %}
+<ul class="accordion accordion--boxed js-accordion {{ tocListClass or '' }}" id="course-toc">
+  <li class="accordion__item open">
+    <a class="accordion__toggle" data-parent="#course-toc" href="#course-toc-1">
+      <span class="flex">Contenido</span>
+      <span class="accordion__toggle-icon material-icons">keyboard_arrow_up</span>
+    </a>
+    <div class="accordion__menu">
+      <ul class="list-unstyled collapse show" id="course-toc-1">
+        <li class="accordion__menu-link active">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Desarrollo frontend.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Desarrollo backend.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Frameworks y Database.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Desarrollo de aplicación web MEAN Stack.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Desarrollo profesional.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>
+        <li class="accordion__menu-link">
+          <span class="material-icons icon-16pt icon--left text-primary">play_circle_outline</span>
+          <a class="flex" href="#">Inglés.</a>
+          <span class="text-muted">1m 10s</span>
+        </li>        
+      </ul>
+    </div>
+  </li>  
+</ul>
+{% endmacro %}

@@ -1,19 +1,19 @@
-<div class="mdk-box mdk-box--bg-gradient-primary bg-dark js-mdk-box position-relative overflow-hidden mb-0" 
+<div class="mdk-box bg-dark js-mdk-box position-relative overflow-hidden mb-0" 
   data-effects="parallax-background blend-background">
   <div class="mdk-box__bg">
-    <div class="mdk-box__bg-front" style="background-image: url(assets/images/1280_work-station-straight-on-view.jpg);"></div>
+    <div class="mdk-box__bg-front" style="background-image: url(assets/images/home-page-banner.jpg);"></div>
   </div>
   <div class="mdk-box__content">
     <div class="{{ containerClass }} py-64pt py-md-112pt">
       <div class="row align-items-center text-center text-md-left">
-        <div class="col-md-6 col-lg-5 order-1 order-md-0">
-          <h1 class="text-white">Learn <span class="d-block d-md-inline-block text-scramble js-text-scramble">Development</span></h1>
-          <p class="lead mb-32pt mb-lg-48pt text-white">Business, Technology and Creative Skills taught by industry experts. Explore a wide range of skills with our professional tutorials.</p>
-          <a href="{{ prefix or '' }}library.html" class="btn btn-lg btn-white btn--raised mb-16pt">Browse Courses</a>
-          <p class="mb-0"><a href="" class="text-white-70 text-underline"><strong>Are you a teacher?</strong></a></p>
-        </div>
-        <div class="col-md-6 col-lg-7 order-0 order-md-1 text-center mb-32pt mb-md-0">
-          <img src="assets/images/macbook.png" alt="macbook" class="home-macbook">
+        <div class="col-md-6 col-lg-5 order-1 order-md-0 p-4" style="background: rgba(88, 91, 104, 0.6);
+        opacity: 1;
+        border-radius: 5px;">
+          <h1 class="text-white">Cambia tu vida aprendiendo</h1>
+          <h1 class="text-white"><span class="d-block d-md-inline-block text-scramble js-text-scramble">Desarrollo Web</span></h1>
+          <p class="lead mb-32pt mb-lg-48pt text-white"> Capacítate! Aprende los lenguajes del siglo XXI. Empieza desde 0, no necesitas conocimientos previos.</p>
+          <a href="{{ prefix or '' }}library.html" class="btn btn-lg btn-white btn--raised mb-16pt">Bootcamps y Cursos</a>
+          <p class="mb-0"><a href="" class="text-white-70 text-underline"><strong>Eres Profesor? Quieres trabajar con nosotros?</strong></a></p>
         </div>
       </div>
     </div>
@@ -30,11 +30,11 @@
     <div class="row align-items-center">
       <div class="d-flex col-md align-items-center border-bottom border-md-0 mb-16pt mb-md-0 pb-16pt pb-md-0">
         <div class="rounded-circle bg-primary w-64 h-64 d-inline-flex align-items-center justify-content-center mr-16pt">
-          <i class="material-icons text-primary-light">subscriptions</i>
+          <i class="material-icons text-primary-light">people</i>
         </div>
         <div class="flex">
-          <p class="mb-0"><strong>8,000+ Courses</strong></p>
-          <p class="text-black-70 mb-0">Explore a wide range of skills.</p>
+          <p class="mb-0"><strong>Más de 1300 exalumnos</strong></p>
+          <p class="text-black-70 mb-0">Desde 2014 enseñamos a Programar.</p>
         </div>
       </div>
       <div class="d-flex col-md align-items-center border-bottom border-md-0 mb-16pt mb-md-0 pb-16pt pb-md-0">
@@ -42,74 +42,206 @@
           <i class="material-icons text-primary-light">verified_user</i>
         </div>
         <div class="flex">
-          <p class="mb-0"><strong>By Industry Experts</strong></p>
-          <p class="text-black-70 mb-0">Professional development from the best people.</p>
+          <p class="mb-0"><strong> Expertos de la Industria</strong></p>
+          <p class="text-black-70 mb-0">Aprendes con profesionales en diferentes áreas.</p>
         </div>
       </div>
       <div class="d-flex col-md align-items-center">
         <div class="rounded-circle bg-primary w-64 h-64 d-inline-flex align-items-center justify-content-center mr-16pt">
-          <i class="material-icons text-primary-light">update</i>
+          <i class="material-icons text-primary-light">language</i>
         </div>
         <div class="flex">
-          <p class="mb-0"><strong>Unlimited Access</strong></p>
-          <p class="text-black-70 mb-0">Unlock Library and learn any topic with one subscription.</p>
+          <p class="mb-0"><strong>Presencial y Online en Vivo</strong></p>
+          <p class="text-black-70 mb-0">no tienes excusa.</p>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="page-section bg-white mb-4" id="contact-form">
+    <div class="{{ containerClass or 'container' }}">
+      <div class="page-headline text-center">
+        <h2>Formulario de contácto</h2>        
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mx-auto">
+      <form>
+        <div>
+          <div class="form-group">          
+              <input type="text" class="form-control" id="names" aria-describedby="names" placeholder="Nombres y Apellídos*" required>
+          </div>
+          <div class="form-group">          
+              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email*" required>          
+          </div>
+          <div class="form-group">          
+              <input type="text" class="form-control" id="phone" aria-describedby="phone" placeholder="Celular*" required>          
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-3 pt-0">Interesado en*</legend>
+              <div class="col-sm-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="cursoPersona" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Curso Persona
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="cursoEmpresa">
+                  <label class="form-check-label" for="gridRadios2">
+                    Curso Empresa
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="alianzaEstrategica">
+                  <label class="form-check-label" for="gridRadios3">
+                    Alianza estratégica
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>          
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="politica" required>
+          <label class="form-check-label" for="politica">Acepto la política de privacidad </label>
+        </div>        
+        <button type="submit" class="btn btn-primary pt-2 float-right disabled" disabled>Contactar Ahora</button>                  
+      </form>      
+  </div>    
 </div>
 
 <div class="page-section border-bottom-2">
   <div class="{{ containerClass or 'container' }}">
     <div class="row align-items-end mb-16pt mb-md-32pt">
       <div class="col-md-auto mb-32pt mb-md-0">
-        <div class="page-headline page-headline--title text-center text-md-left p-0">
-          <h2>Top Courses</h2>
+        <div class="page-headline page-headline--title text-center text-md-left p-0">          
+          <h2>Bootcamps</h2>
         </div>
       </div>
-      <div class="col-md text-center text-md-right d-flex justify-content-md-end align-items-center flex-wrap" style="white-space: nowrap;">
+      <!-- <div class="col-md text-center text-md-right d-flex justify-content-md-end align-items-center flex-wrap" style="white-space: nowrap;">
         <h5 class="mr-24pt mb-md-0 d-md-inline-block">Popular topics</h5>
         <a href="{{ prefix }}library-development.html" class="chip mb-16pt mb-md-0 chip-secondary">Development</a>
         <a href="{{ prefix }}library-development.html" class="chip mb-16pt mb-md-0 chip-outline-secondary">Design</a>
         <a href="{{ prefix }}library-development.html" class="chip mb-16pt mb-md-0 chip-outline-secondary">Photography</a>
         <a href="{{ prefix }}library-development.html" class="chip mb-16pt mb-md-0 chip-outline-secondary d-md-none d-lg-inline-flex">Business</a>
-      </div>
+      </div> -->
     </div>
 
     {% import '_course-card.html' as course %}
+    <div class="row">      
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        {{ course.component(title='Bootcamp Data Science', image='data_science', favorite=false, file_link='python-course.html', teacher='Christian Picon',
+          hours='144 horas', schedule='Lunes a Viernes', schedule_hours='Horario: Presencial - 6PM a 10PM', schedule2='Martes, Miercoles y Jueves', schedule_hours2='Horario: Presencial - 6PM a 9PM',
+          small_description='Conviertete en un científico de datos y manipula la información de forma inteligente y automática.',
+          checkedList={
+              firstItem: 'Administrar proyectos colaborativos en repositorios OpenSource como Github.', 
+              secondItem: 'Identificar y manipular Python como herramienta para el análisis de datos.',
+              thirdItem: 'Utilizar la consola/terminal para actualizar las librerias y crear máquinas de virtuales de Python.',
+              fourthItem: 'Aplicar técnicas de estructuración y operación de datos como vectores y/o matrices.',
+              fifthItem: 'Presentar pruebas laborales en desarrollo de análisis de datos.'
+            }
+          ) }}
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">        
+          {{ course.component(title='Bootcamp FullStack', image='fullStack', favorite=false, file_link='fullstack-course.html', teacher='Christian Picon',
+            hours='160 horas', schedule='Lunes a Viernes', schedule_hours='Horario: 6PM a 10PM', schedule2='Martes, Miercoles y Jueves', schedule_hours2='Horario: Presencial - 8AM a 12PM',
+            small_description='Conviértete en un programador web Full Stack, dominando el desarrollo Frontend y Backend, cumple tus sueños y consigue el trabajo que siempre quisiste.',
+            checkedList={
+                firstItem: 'Desarrollar aplicaciones Backend con NodeJS, JavaScript, ExpressJS.', 
+                secondItem: 'Crear Páginas y sitios web (Frontend) utilizando HTML5 CSS3 JavaScript,',
+                thirdItem: 'Crear aplicaciones web completas con MEAN Stack. (Mongo-Express-Angular 8-Node).',
+                fourthItem: 'Emprender en su proyecto o idea de negocio.',
+                fifthItem: 'Aplicar la metodología ágil SCRUM en sus proyectos de software.'
+              }
+            ) }}
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+          {{ course.component(title='Bootcamp Frontend', image='frontend', favorite=false, file_link='frontend-course.html', teacher='Christian Picon',
+            hours='80 horas', schedule='Martes, Miercoles y Jueves', schedule_hours='Horario: Presencial - 6PM a 9PM', schedule2='Lunes a Viernes', schedule_hours2='Horario: Presencial - 2PM a 5.30PM',
+            small_description='Conviértete en un programador web Full Stack, dominando el desarrollo Frontend y Backend, cumple tus sueños y consigue el trabajo que siempre quisiste.',
+            checkedList={
+                firstItem: 'Enseñar los fundamentos de programación a personas con o sin conocimientos en programación, mejorar su lógica por medio de algoritmia, para poder enfrentarse a cualquier lenguaje de programación más avanzado.', 
+                secondItem: 'Enseñar a crear páginas y sitios web informáticos por medio de HTML5+CSS3+JAVASCRIPT, para que puedan emprender en sus proyectos y/o trabajar como programador web o webmaster',
+                thirdItem: 'Mejorar el trabajar en equipo.',
+                fourthItem: 'Optimizar proyectos por medio de metodologías ágiles como SCRUM.',
+                fifthItem: 'Emprender en su proyecto o idea de negocio.'
+              }
+            ) }}
+      </div>
+      
+      <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+        {{ course.component(title='Learn Angular fundamentals', hours='120', schedule='Lunes a Viernes', schedule_hours='Horario: 8 a 12 - 6 a 9',teacher='Elijah Murray', image='angular', free=true, small_description='Learn the fundamentals of working with Angular and how to create basic applications.') }}
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        {{ course.component(title='Build a WordPress Website', hours='120', schedule='Lunes a Viernes', schedule_hours='Horario: 8 a 12 - 6 a 9',teacher='Elijah Murray', image='wordpress', small_description='Learn the fundamentals of working with Angular and how to create basic applications.') }}
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        {{ course.component(title='Become a React Native Developer', hours='120', schedule='Lunes a Viernes', schedule_hours='Horario: 8 a 12 - 6 a 9',teacher='Elijah Murray', image='react', position='left' , small_description='Learn the fundamentals of working with Angular and how to create basic applications.') }}
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        {{ course.component(title='Become a Redis Developer', hours='120', schedule='Lunes a Viernes', schedule_hours='Horario: 8 a 12 - 6 a 9',teacher='Elijah Murray', image='redis' , small_description='Learn the fundamentals of working with Angular and how to create basic applications.') }}
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        {{ course.component(title='Introduction to Typescript', hours='120', schedule='Lunes a Viernes', schedule_hours='Horario: 8 a 12 - 6 a 9',teacher='Elijah Murray', image='typescript', position='left', small_description='Learn the fundamentals of working with Angular and how to create basic applications.') }}
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        {{ course.component(title='Become a DevOps Engineer', hours='120', schedule='Lunes a Viernes', schedule_hours='Horario: 8 a 12 - 6 a 9',teacher='Elijah Murray', image='devops', small_description='Learn the fundamentals of working with Angular and how to create basic applications.') }}
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        {{ course.component(title='Angular Unit Testing', hours='120', schedule='Lunes a Viernes', schedule_hours='Horario: 8 a 12 - 6 a 9',teacher='Elijah Murray', image='angular_testing', position='left', avatar='angular', small_description='Learn the fundamentals of working with Angular and how to create basic applications.') }}
+      </div> -->
+    </div>
+    <div class="row align-items-end mb-16pt mb-md-32pt">
+      <div class="col-md-auto mb-32pt mb-md-0">
+        <div class="page-headline page-headline--title text-center text-md-left p-0">          
+          <h2>Cursos</h2>
+        </div>
+      </div>
+      <!-- <div class="col-md text-center text-md-right d-flex justify-content-md-end align-items-center flex-wrap" style="white-space: nowrap;">
+        <h5 class="mr-24pt mb-md-0 d-md-inline-block">Popular topics</h5>
+        <a href="{{ prefix }}library-development.html" class="chip mb-16pt mb-md-0 chip-secondary">Development</a>
+        <a href="{{ prefix }}library-development.html" class="chip mb-16pt mb-md-0 chip-outline-secondary">Design</a>
+        <a href="{{ prefix }}library-development.html" class="chip mb-16pt mb-md-0 chip-outline-secondary">Photography</a>
+        <a href="{{ prefix }}library-development.html" class="chip mb-16pt mb-md-0 chip-outline-secondary d-md-none d-lg-inline-flex">Business</a>
+      </div> -->
+    </div>
     <div class="row">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        {{ course.component(title='Learn Angular fundamentals', image='angular', free=true) }}
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        {{ course.component(title='Build an iOS Application in Swift', image='swift', favorite=true) }}
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        {{ course.component(title='Build a WordPress Website', image='wordpress') }}
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        {{ course.component(title='Become a React Native Developer', image='react', position='left') }}
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        {{ course.component(title='Become a Redis Developer', image='redis') }}
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        {{ course.component(title='Introduction to Typescript', image='typescript', position='left') }}
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        {{ course.component(title='Become a DevOps Engineer', image='devops') }}
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        {{ course.component(title='Angular Unit Testing', image='angular_testing', position='left', avatar='angular') }}
-      </div>
-    </div>
-    <div class="pt-md-16pt text-center">
-      <a href="{{ prefix or '' }}library.html" class="btn btn-outline-secondary">Browse Courses</a>
-    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            {{ course.component(title='JavaScript', image='javascript', favorite=false, file_link='javascript-course.html', teacher='Christian Picon',
+              hours='20 horas', schedule='Sábados', schedule_hours='Horario: 8AM a 12 PM',
+              small_description='Aprende el lenguaje de programación más popular del mundo JavaScript, con el cual le darás vida a tus páginas y/o sitios web.',
+              checkedList={
+                  firstItem: '­Aplicar Javascript en sitios web.', 
+                  secondItem: 'Crear cualquier tipo de página web dinámica',
+                  thirdItem: 'Aplicar buenas prácticas y estándares en sus desarrollos de software.',
+                  fourthItem: 'Afrontar cualquier prueba o reto relacionado a Javascript.',
+                  fifthItem: 'Aprender cualquier framework o herramienta de la familia Javascript.'
+                }
+              ) }}
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">        
+            {{ course.component(title='Wordpress', image='wordpress2', favorite=false, file_link='wordpress-course.html', teacher='Christian Picon',
+              hours='20 horas', schedule='Martes, Miercoles y Jueves', schedule_hours='Horario: 8AM a 12PM',
+              small_description='Este curso para emprendedores y creativos tiene como objetivo entregar todas las herramientas necesarias para que el alumno domine WordPress y pueda crear y administrar su propio sitio web con el manejador de contenidos más usado del mundo.',
+              checkedList={
+                  firstItem: '­­­Crear sitios web con WordPress.', 
+                  secondItem: 'Administrar sitios web con WordPress.',
+                  thirdItem: 'Publicar sitios en internet creados con WordPress.',
+                  fourthItem: 'Entender que es un Hosting y Dominio.',
+                  fifthItem: 'Emprender en su proyecto o idea de negocio.'
+                }
+              ) }}
+        </div>
+    </div>    
+    <!-- <div class="pt-md-16pt text-center">
+      <a href="{{ prefix or '' }}library.html" class="btn btn-outline-secondary">Lista de Cursos</a>
+    </div> -->
   </div>
 </div>
 
-<div class="page-section bg-white border-bottom-2">
+<!-- <div class="page-section bg-white border-bottom-2">
   <div class="{{ containerClass or 'container' }}">
     <div class="page-headline text-center">
       <h2>Learning Paths</h2>
@@ -197,15 +329,147 @@
       <a href="{{ prefix or '' }}paths.html" class="btn btn-outline-secondary">Browse Learning Paths</a>
     </div>
   </div>
+</div> -->
+
+
+<div class="page-section bg-white">
+    <div class="{{ containerClass or 'container' }}">
+      <div class="page-headline text-center">
+        <h2>Trabajamos con organizaciones multilaterales y empresas que apuestan por el Talento TIC de la región</h2>
+      </div>
+      <div class="row text-center">      
+          <div class="col-12 col-md-4 col-lg-3 pb-5">
+              <img src="assets/images/logo/Banco Mundial.png" width="150px" >
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 pb-5">
+              <img src="assets/images/logo/NORAD.png" width="150px">
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 pb-5">
+              <img src="assets/images/logo/Bictia Web.png" width="150px">
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 pb-5">
+              <img src="assets/images/logo/Cluster.png" width="150px">
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 pb-5">
+              <img src="assets/images/logo/CamaraComercioBogota.png" width="150px">
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mt-n5">
+              <img src="assets/images/logo/Aldeamo.png" width="150px">
+          </div>                    
+      </div>      
+  </div>
+</div>
+
+<div class="page-section" id="comunidad-bit">
+    <div class="{{ containerClass or 'container' }}">
+      <div class="page-headline text-center">
+        <h2>Comunidad BIT</h2>
+      </div>
+      <div class="row">      
+          <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card card-course overlay js-overlay mdk-reveal" style="min-height: 259px">
+                <div class="card-body">
+                  <div class="col-12 text-center">
+                    <h2>2300+</h2>
+                  </div>
+                  <div class="col-12 text-center pt-2">
+                      <h5>Graduados</h5>
+                  </div>
+                  <div class="col-12 text-center pt-2">
+                      <span>La comunidad BIT se creo en el año 2013. Llevamos 6 años creando una red de programadores.</span>
+                  </div>                
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card card-course overlay js-overlay mdk-reveal" style="min-height: 259px">
+                <div class="card-body">
+                  <div class="col-12 text-center">
+                    <h2>4600+</h2>
+                  </div>
+                  <div class="col-12 text-center pt-2">
+                      <h5>Proyectos</h5>
+                  </div>
+                  <div class="col-12 text-center pt-2">
+                      <span>Durante los bootcamps nuestros alumnos desarrollan proyectos.</span>
+                  </div>                
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card card-course overlay js-overlay mdk-reveal" style="min-height: 259px">
+                <div class="card-body">
+                  <div class="col-12 text-center">
+                    <h2>50%</h2>
+                  </div>
+                  <div class="col-12 text-center pt-2">
+                      <h5>Mujeres</h5>
+                  </div>
+                  <div class="col-12 text-center pt-2">
+                      <span>50% de nuestras estudiantes han sido mujeres.</span>
+                  </div>                
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card card-course overlay js-overlay mdk-reveal" style="min-height: 259px">
+              <div class="card-body">
+                <div class="col-12 text-center">
+                  <h2>90%</h2>
+                </div>
+                <div class="col-12 text-center pt-2">
+                    <h5>Empleo</h5>
+                </div>
+                <div class="col-12 text-center pt-2">
+                    <span>Al finalizar nuestros bootcamps, nuestros alumnos son empleados ó crean sus propias empresas.</span>
+                </div>                
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
 </div>
 
 <div class="page-section">
+    <div class="{{ containerClass or 'container' }}">
+      <div class="page-headline text-center">
+        <h2>¿Quiénes somos?</h2>
+        <!-- <p class="lead measure-lead mx-auto text-black-70">Lo que otros estudiantes tienen que decir acerca de nosotros y como los ayudamos a cumplir sus metas.</p> -->
+      </div>
+  
+      <div class="js-player embed-responsive embed-responsive-16by9 mb-32pt" style="width: 70%; margin: 0 auto">
+          <div class="player embed-responsive-item">
+            <div class="player__content">
+              <div class="player__image" style="--player-image: url(assets/images/illustration/player.svg)"></div>
+              <a href="" class="player__play">
+                <span class="material-icons">play_arrow</span>
+              </a>
+            </div>
+            <div class="player__embed d-none">
+              <!-- <iframe class="embed-responsive-item" src="assets/videos/Python_course.mp4" allowfullscreen=""></iframe> -->
+              <video controls class="embed-responsive-item">
+                  <source src="assets/videos/BIT - Introducción.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-section bg-white">
   <div class="{{ containerClass or 'container' }}">
     <div class="page-headline text-center">
-      <h2>Feedback</h2>
-      <p class="lead measure-lead mx-auto text-black-70">What other students turned professionals have to say about us after learning with us and reaching their goals.</p>
+      <h2>Testimonios</h2>
+      <p class="lead measure-lead mx-auto text-black-70">Conoce lo que los estudiantes dicen acerca de nosotros.</p>
     </div>
 
     {% include 'pages/_feedback.carousel.html' %}
   </div>
+</div>
+<div class="mdk-header--fixed" style="bottom: 0;
+top: 90%;
+z-index: 1;
+left: calc(100% - 93px);">
+    <a data-toggle="tooltip" title="Info de 8am - 8pm" data-placement="top" href="https://wa.me/573023349919"><img src="assets/images/whatsapp-icon.png" width="100px"></a>
 </div>
